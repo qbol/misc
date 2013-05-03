@@ -1,0 +1,37 @@
+//description: По номеру месяца, введенному с клавиатуры, 
+             // вывести на экран название времени года
+#include <iostream>
+#include <stdio.h>
+#include <locale>
+using namespace std;
+
+////// Basic function //////
+int main ()
+{
+    setlocale(LC_ALL,".1251"); //local
+    
+    int month;
+    printf("Введите номер месяца в году\n");
+    scanf("%d",&month);
+    
+    switch (month)
+    {
+    case 12:
+    case 1:
+    case 2: printf("Зима\n");break;
+    case 3:
+    case 4:
+    case 5: printf("Весна\n");break;
+    case 6:
+    case 7:
+    case 8: printf("Лето\n");break;
+    case 9:
+    case 10:
+    case 11: printf("Осень\n");
+    default: printf("Ошибка ввода\n");break;   
+    }
+     
+    system ("pause");
+    return 0;    
+ }
+     
