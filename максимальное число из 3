@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#define PR(Z) printf("\n max=%f",Z)
+
+int main(void)
+
+{
+
+float x,y,z;
+
+printf("\n Input x,y,z→");
+
+scanf("%f%f%f",&x,&y,&z);
+
+if ((x>y)&&(x>z)) PR(x);
+
+else
+
+if (y>z) PR(y);
+
+else PR(z);
+
+return 0;
+
+}
